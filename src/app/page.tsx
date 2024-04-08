@@ -7,17 +7,9 @@ import { Table } from '@/components/table/Table'
 import { DeleteModal } from '@/components/modals/DeleteModal'
 import { FormModal } from '@/components/modals/FormModal'
 import { Product } from '@/utils/Product'
+import { productInitialState } from '@/utils/InitialState'
 import { getProductsList, deleteProduct, createProduct, editProduct } from '@/services/products'
 import Head from 'next/head'
-
-export const productInitialState = {
-  title: '',
-  description: '',
-  price: 0,
-  stock: 0,
-  brand: '',
-  thumbnail: '',
-}
 
 export default function Products() {
   const [products, setProducts] = useState<Product[]>()

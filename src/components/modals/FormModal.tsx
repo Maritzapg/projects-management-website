@@ -4,7 +4,7 @@ import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { Product } from '@/utils/Product'
 import { getProduct } from '@/services/products'
-import { productInitialState } from '@/app/page'
+import { productInitialState } from '@/utils/InitialState'
 
 const schema = yup
   .object({
